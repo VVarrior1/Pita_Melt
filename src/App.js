@@ -3,7 +3,7 @@ import "tailwindcss/tailwind.css";
 import React from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
-import Menu from "./components/Menu";
+// import Menu from "./components/Menu";
 import About from "./components/About";
 import Footer from "./components/Footer";
 
