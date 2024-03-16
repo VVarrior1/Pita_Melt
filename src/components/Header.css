@@ -1,19 +1,14 @@
-.title {
-  font-family: Brush Script MT;
-  font-size: 1.5em; /* Removed quotation marks and added hyphen */
-  color: #f17105;
-  text-align: center; /* Removed quotation marks and added hyphen */
-  padding: 10px; /* Removed quotation marks */
-  padding-right: 50%;
-  margin: 0px; /* Removed quotation marks */
-  padding-left: 25px;
-}
 img {
   width: 85px;
   height: 85px;
+  align-self: left;
+  display: block;
+  margin-left: 2%;
+  margin-right: auto;
 }
 
 .header {
+  user-select: none;
   background-color: #071013; /* Removed quotation marks */
   min-height: 10vh; /* Removed quotation marks and added hyphen */
   display: flex;
@@ -26,7 +21,7 @@ img {
 }
 
 a {
-  font-family: Times New Roman, Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
   color: #f17105;
   font-weight: bold;
   text-decoration: none;
