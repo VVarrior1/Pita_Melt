@@ -1,3 +1,8 @@
+.dev {
+  padding: 0;
+  margin: 0;
+  color: red;
+}
 .beforeHome {
   background-color: black; /* Black background color */
   height: 90vh; /* Full width */
@@ -116,5 +121,12 @@
   }
   .beforeHome {
     height: 45vh; /* Adjust height for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .homeText {
+    padding: 15px;
+    margin-top: 10px;
   }
 }

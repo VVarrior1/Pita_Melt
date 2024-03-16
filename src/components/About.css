@@ -1,14 +1,14 @@
 /* AboutUs.css */
 .about-us-section {
-  background-image: url("../assets/Shawarma1.jpg"); /* Replace with your image path */
+  background-image: url("../assets/shawarmabg.webp"); /* Replace with your image path */
   background-size: cover;
   background-position: center;
   color: #f17105;
   text-align: center;
   padding: 150px 50px; /* Increased top and bottom padding */
   position: relative; /* For overlay if needed */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
 }
-
 
 /* If you want to add a dark overlay */
 .about-us-section::before {

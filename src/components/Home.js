@@ -6,6 +6,7 @@ const Home = () => {
   return (
     <div className="beforeHome">
       <div className="home">
+        <h6 className="dev">Website currently under development!</h6>
         <div className="bg"></div>
         <h3 className="homeTitle">PitaMelt</h3>
         <h5 className="homeText">

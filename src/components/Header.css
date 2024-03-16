@@ -52,16 +52,4 @@ a:hover {
 
 /* Media query for smaller screens */
 @media (max-width: 600px) {
-  .menu-toggle {
-    display: block; /* Show hamburger icon */
-  }
-
-  .menu {
-    display: none; /* Hide the regular menu */
-    flex-direction: column; /* Stack menu items vertically */
-  }
-
-  .menu.open {
-    display: flex; /* Show menu when hamburger is clicked */
-  }
 }
