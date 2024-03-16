@@ -1,6 +1,6 @@
 .beforeHome {
   background-color: black; /* Black background color */
-  height: 100vh; /* Full width */
+  height: 90vh; /* Full width */
   position: relative;
   z-index: -1;
 }
@@ -23,7 +23,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 72vh; /* Full height */
+  height: 100vh; /* Full height */
   background-image: url("../assets/Shawarma1.jpg");
   background-size: cover;
   background-position: center;
