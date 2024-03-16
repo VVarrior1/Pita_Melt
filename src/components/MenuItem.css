@@ -1,0 +1,39 @@
+/* MenuItem.css */
+.MenuItem {
+  border: 2px solid #ddd; /* light grey border */
+  border-radius: 10px; /* rounded corners */
+  padding: 15px; /* spacing inside the border */
+  margin-left: 75px; /* spacing outside the border */
+  margin-right: 75px; /* spacing outside the border */
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+  text-align: center; /* centering text */
+  background-color: #f9f9f9; /* light background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* smooth transition for hover effect */
+}
+
+.MenuItem img {
+  max-width: 100%; /* ensures image is responsive */
+  height: auto; /* maintain aspect ratio */
+  border-radius: 5px; /* slightly rounded corners for the image */
+  margin-bottom: 10px; /* spacing between image and text */
+}
+
+.MenuItem h3 {
+  font-family: "Arial", sans-serif; /* nice, readable font */
+  color: #333; /* dark grey color for text */
+  margin-bottom: 5px; /* spacing between name and price */
+}
+
+.MenuItem p {
+  font-family: "Georgia", serif; /* elegant, serif font */
+  color: #666; /* lighter grey for price */
+  font-size: 1.2em; /* slightly larger font size */
+}
+
+.MenuItem:hover {
+  transform: scale(1.05); /* slightly enlarge on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* stronger shadow on hover */
+}

@@ -1,0 +1,88 @@
+.beforeHome {
+  background-color: black; /* Black background color */
+  height: 72vh; /* Full width */
+  position: relative;
+  z-index: -1;
+}
+
+.home {
+  position: relative; /* Needed for absolute positioning of the child */
+  height: 100%; /* Adjust to fit content */
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: left;
+  text-align: left;
+  color: white;
+  z-index: 1; /* Ensure content is above background */
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 72vh; /* Full height */
+  background-image: url("../assets/Shawarma1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.6; /* Apply opacity here */
+  z-index: -2; /* Place it behind the content */
+}
+
+.homeTitle {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3em; /* Increased font size */
+  font-weight: bold;
+
+  margin: 1%;
+  padding-top: 10%;
+}
+.homeText {
+  font-family: Bradley Hand, cursive;
+  font-size: 1.5em; /* Increased font size */
+  font-weight: bold;
+  margin: 1%;
+  padding-top: 1%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+}
+.number {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3em; /* Increased font size */
+  margin: 1%;
+  padding-top: 1%;
+  color: #f17105;
+  text-align: center;
+  transition: color 0.3s ease; /* Transition for color change */
+}
+.subtitle {
+  color: white;
+}
+
+@media (max-width: 1025px) {
+  .homeTitle {
+    font-size: 1.7em; /* Smaller font size for mobile */
+    padding-top: 5%; /* Adjust padding for smaller screens */
+  }
+
+  .homeText {
+    font-size: 0.9em; /* Smaller font size for mobile */
+    padding-top: 0.5%; /* Adjust padding for smaller screens */
+    margin: 0.5%; /* Adjust margin for smaller screens */
+  }
+  .subtitle {
+    color: white;
+  }
+  .number {
+    font-size: 1.3em; /* Smaller font size for mobile */
+    margin-bottom: 5px; /* Adjust padding for smaller screens */
+  }
+
+  .bg {
+    height: 45vh; /* Adjust height for smaller screens */
+  }
+  .beforeHome {
+    height: 45vh; /* Adjust height for smaller screens */
+  }
+}

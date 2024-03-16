@@ -1,0 +1,40 @@
+/* AboutUs.css */
+.about-us-section {
+  background-image: url("../assets/Shawarma1.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  color: #f17105;
+  text-align: center;
+  padding: 150px 50px; /* Increased top and bottom padding */
+  position: relative; /* For overlay if needed */
+}
+
+
+/* If you want to add a dark overlay */
+.about-us-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust color and opacity */
+  z-index: 1;
+}
+
+.about-us-content {
+  position: relative;
+  z-index: 2;
+}
+
+.about-us-title {
+  font-size: 2em; /* Adjust font-size as needed */
+  margin-bottom: 10px;
+}
+
+.about-us-address,
+.about-us-phone {
+  font-size: 1em; /* Adjust font-size as needed */
+}
+
+/* Responsive styles and other specific styles should be added as needed. */

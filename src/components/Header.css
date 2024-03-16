@@ -1,0 +1,72 @@
+.title {
+  font-family: Brush Script MT;
+  font-size: 1.5em; /* Removed quotation marks and added hyphen */
+  color: #f17105;
+  text-align: center; /* Removed quotation marks and added hyphen */
+  padding: 10px; /* Removed quotation marks */
+  padding-right: 50%;
+  margin: 0px; /* Removed quotation marks */
+  padding-left: 25px;
+}
+img {
+  width: 85px;
+  height: 85px;
+}
+
+.header {
+  background-color: #071013; /* Removed quotation marks */
+  min-height: 10vh; /* Removed quotation marks and added hyphen */
+  display: flex;
+  flex-direction: row; /* Removed quotation marks and added hyphen */
+  align-items: center; /* Removed quotation marks and added hyphen */
+  justify-content: center; /* Removed quotation marks and added hyphen */
+  font-size: calc(10px + 2vmin); /* Removed quotation marks */
+  color: white;
+  position: relative;
+}
+
+a {
+  font-family: Times New Roman, Times, serif;
+  color: #f17105;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 5px;
+  margin: 10px;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #7f7b82;
+  transition: all 0.3s ease; /* Added transition property */
+}
+
+/* Existing styles... */
+
+/* Responsive Design for screens smaller than 600px */
+/* Header.css */
+/* ... existing styles ... */
+
+.menu-toggle {
+  display: none;
+  /* Style your hamburger icon here */
+}
+
+.menu {
+  display: flex; /* Keep the regular menu on larger screens */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .menu-toggle {
+    display: block; /* Show hamburger icon */
+  }
+
+  .menu {
+    display: none; /* Hide the regular menu */
+    flex-direction: column; /* Stack menu items vertically */
+  }
+
+  .menu.open {
+    display: flex; /* Show menu when hamburger is clicked */
+  }
+}
