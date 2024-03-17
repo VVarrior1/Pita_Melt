@@ -7,11 +7,11 @@
   background-color: black; /* Black background color */
   height: 90%; /* Full width */
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 
 .home {
-  user-select: none;
+  /* user-select: none; */
   position: relative; /* Needed for absolute positioning of the child */
   height: 10%; /* Adjust to fit content */
   display: flex;
@@ -34,7 +34,7 @@
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.6; /* Apply opacity here */
-  z-index: -2; /* Place it behind the content */
+  z-index: -1; /* Place it behind the content */
 }
 
 .homeTitle {
@@ -118,9 +118,41 @@
     margin-bottom: 5px; /* Adjust padding for smaller screens */
   }
 
-  
   .homeText {
     padding: 15px;
     margin-top: 10px;
   }
+}
+
+.call-button,
+.directions-button {
+  background-color: #f17105; /* A warm orange color */
+  color: white; /* White text */
+  border: none; /* No border */
+  padding: 12px 24px; /* Top and bottom padding, Left and right padding */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; /* Adjust the font size as needed */
+  margin: 4px 2px; /* Spacing between buttons */
+  cursor: pointer; /* Pointer/hand icon */
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Box shadow for a subtle lift effect */
+  transition-duration: 0.4s; /* Transition for a smooth hover effect */
+}
+
+.call-button:hover,
+.directions-button:hover {
+  background-color: #f16f05e2; /* A slightly darker orange on hover */
+  color: rgba(255, 255, 255, 0.903);
+  text-decoration: none;
+}
+
+/* Optional: Specific styles for each button, if needed */
+.call-button {
+  /* Specific styles for call button */
+}
+
+.directions-button {
+  /* Specific styles for directions button */
 }
