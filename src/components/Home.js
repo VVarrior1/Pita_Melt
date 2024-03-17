@@ -2,7 +2,6 @@ import React from "react";
 import "./Home.css";
 import { FaPhone } from "react-icons/fa"; // Importing phone icon from 'react-icons/fa'
 import { FaLocationArrow } from "react-icons/fa";
-import CallButton from "./CallButton";
 const Home = () => {
   return (
     <div className="beforeHome">
