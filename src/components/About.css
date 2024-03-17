@@ -5,6 +5,7 @@
   background-position: center;
   color: #f17105;
   text-align: center;
+  margin-top: auto;
   padding: 150px 50px; /* Increased top and bottom padding */
   position: relative; /* For overlay if needed */
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
@@ -38,3 +39,15 @@
 }
 
 /* Responsive styles and other specific styles should be added as needed. */
+@media (max-width: 768px) {
+  .about-us-section {
+    padding: 80px 20px; /* Adjust padding for smaller screens */
+  }
+  .about-us-title {
+    font-size: 1.5em; /* Adjust font-size for smaller screens */
+  }
+  .about-us-address,
+  .about-us-phone {
+    font-size: 0.8em; /* Adjust font-size for smaller screens */
+  }
+}
