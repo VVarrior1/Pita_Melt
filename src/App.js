@@ -1,12 +1,11 @@
 // App.js
-import React, { useEffect } from "react";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import Menu from "./components/Menu";
 import SubFooter from "./components/SubFooter";
 import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HubSpotTrackingCode from "./HubspotTrackingCode";
+import HubSpotTrackingCode from "./HubSpotTrackingCode";
 
 function App() {
   return (
