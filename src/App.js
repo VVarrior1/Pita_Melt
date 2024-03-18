@@ -5,12 +5,10 @@ import Menu from "./components/Menu";
 import SubFooter from "./components/SubFooter";
 import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HubSpotTrackingCode from "./HubSpotTrackingCode";
 
 function App() {
   return (
     <BrowserRouter>
-      <HubSpotTrackingCode />
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
