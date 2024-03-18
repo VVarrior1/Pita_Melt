@@ -1,7 +1,7 @@
 import React from "react";
-import "./About.css"; // Make sure to import the CSS file
+import "./SubFooter.css"; // Make sure to import the CSS file
 
-const About = () => {
+const SubFooter = () => {
   return (
     <div className="about-us-section">
       <div className="about-us-content">
@@ -18,4 +18,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default SubFooter;

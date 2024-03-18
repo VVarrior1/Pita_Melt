@@ -114,7 +114,7 @@
     color: white;
   }
   .number {
-    font-size: 1.3em; /* Smaller font size for mobile */
+    font-size: 1.2em; /* Smaller font size for mobile */
     margin-bottom: 5px; /* Adjust padding for smaller screens */
   }
 
@@ -129,14 +129,14 @@
   background-color: #f17105; /* A warm orange color */
   color: white; /* White text */
   border: none; /* No border */
-  padding: 12px 24px; /* Top and bottom padding, Left and right padding */
+  padding: 7px 26px; /* Top and bottom padding, Left and right padding */
   text-align: center;
   text-decoration: none;
   display: inline-block;
   font-size: 16px; /* Adjust the font size as needed */
-  margin: 4px 2px; /* Spacing between buttons */
+  margin: 5px 7px; /* Spacing between buttons */
   cursor: pointer; /* Pointer/hand icon */
-  border-radius: 25px; /* Rounded corners */
+  border-radius: 5px; /* Rounded corners */
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Box shadow for a subtle lift effect */
   transition-duration: 0.4s; /* Transition for a smooth hover effect */
 }

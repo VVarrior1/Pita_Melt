@@ -2,6 +2,7 @@ import React from "react";
 import "./Home.css";
 import { FaPhone } from "react-icons/fa"; // Importing phone icon from 'react-icons/fa'
 import { FaLocationArrow } from "react-icons/fa";
+import SubFooter from "./SubFooter";
 const Home = () => {
   return (
     <div className="beforeHome">
@@ -44,6 +45,7 @@ const Home = () => {
           </span>{" "}
         </h5>
       </div>
+      <SubFooter  />
     </div>
   );
 };

@@ -46,10 +46,6 @@ a:hover {
   /* Style your hamburger icon here */
 }
 
-.menu {
-  display: flex; /* Keep the regular menu on larger screens */
-}
-
 /* Media query for smaller screens */
 @media (max-width: 600px) {
 }

@@ -5,7 +5,7 @@
   position: relative;
   width: 35px; /* Width of the hamburger icon */
   height: 30px; /* Height of the hamburger icon */
-  z-index: 1001; /* Ensure it's above other content */
+  z-index: 10001; /* Ensure it's above other content */
   margin-right: 20px;
 }
 
@@ -34,7 +34,7 @@
   flex-direction: column;
   background-color: #071013; /* Background of the menu */
   position: fixed;
-  top: 0;
+  top: 35px;
   right: 0;
   width: 250px; /* Width of the menu */
   height: 100%; /* Full-screen menu */
@@ -67,4 +67,3 @@
 }
 
 /* Responsive adjustments */
-

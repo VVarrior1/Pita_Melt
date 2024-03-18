@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./HamburgerMenu.css";
+import { Link } from "react-router-dom";
 function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -16,12 +17,11 @@ function HamburgerMenu() {
       </div>
       {/* Menu Items: Shown or hidden based on isOpen state */}
       <div className={`menu ${isOpen ? "open" : ""}`}>
-        <a href="/home">Home</a>
-        <a href="/menu">Menu</a>
-        <a href="/about">About</a>
-        <a href="/contact">Contact</a>
-        <a href="/order">Order Online</a>
-        <a href="/catering">Catering</a>
+        <Link to="/">Home</Link>
+        <Link to="/menu">Menu</Link>
+        <Link to="/order">Order</Link>
+        <Link to="/catering">Catering</Link>
+        <Link to="/about">About</Link>
       </div>
     </nav>
   );
