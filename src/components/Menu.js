@@ -79,7 +79,7 @@ const menuItems = {
 
 const renderMenuItem = (item) => (
   <div className="menu-item">
-    <h4 className="">{item.name}</h4>
+    <h4 className="fw-light">{item.name}</h4>
     <p>{item.prices.join(", ")}</p>
     <h6>{item.description}</h6>
   </div>
@@ -90,7 +90,7 @@ const Menu = () => (
     <h2>Pita Wraps & Sandwiches</h2>
     {menuItems.pitaWraps.map(renderMenuItem)}
     <h2>Platters</h2>
-    <h6 className="text-center max-w-30px">
+    <h6 className="text-center max-w-30px fw-light">
       All platters come with rice, meat, a choice of two sauces and garden
       salad/garlic potato
     </h6>
