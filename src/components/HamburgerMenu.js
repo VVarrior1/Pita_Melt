@@ -5,10 +5,16 @@ import { Link } from "react-router-dom";
 function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
   const menuRef = useRef(null);
+  const hamburgerRef = useRef(null); // Ref for the hamburger icon
 
   useEffect(() => {
     const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        !hamburgerRef.current.contains(event.target)
+      ) {
+        // Check if the click is not on the hamburger icon
         setIsOpen(false);
       }
     };
@@ -26,7 +32,12 @@ function HamburgerMenu() {
 
   return (
     <nav className="hamburgermenu-container">
-      <div className={`hamburger ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
+      {/* Add the ref to the div that wraps the hamburger icon */}
+      <div
+        ref={hamburgerRef}
+        className={`hamburger ${isOpen ? "open" : ""}`}
+        onClick={toggleMenu}
+      >
         {/* Hamburger Icon */}
         <div className="bar"></div>
         <div className="bar"></div>
@@ -46,9 +57,7 @@ function HamburgerMenu() {
         <Link to="/catering" onClick={toggleMenu}>
           Catering
         </Link>
-        {/* <Link to="/about" onClick={() => setIsOpen(!isOpen)}>
-          About
-        </Link> */}
+        {/* Additional menu items here */}
       </div>
     </nav>
   );
