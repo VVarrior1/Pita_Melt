@@ -43,4 +43,8 @@
   .main-menu {
     display: none;
   }
+  .img1 { 
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }

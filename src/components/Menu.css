@@ -6,6 +6,9 @@
   align-items: center;
   padding: 20px;
 }
+.menuforsale h2 {
+  color: #f17105;
+}
 
 .menu-item {
   margin: 10px 0;
