@@ -5,7 +5,7 @@ function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className = "hamburgermenu-container">
+    <nav className="hamburgermenu-container">
       <div
         className={`hamburger ${isOpen ? "open" : ""}`}
         onClick={() => setIsOpen(!isOpen)}
@@ -17,11 +17,21 @@ function HamburgerMenu() {
       </div>
       {/* Menu Items: Shown or hidden based on isOpen state */}
       <div className={`menu ${isOpen ? "open" : ""}`}>
-        <Link to="/">Home</Link>
-        <Link to="/menu">Menu</Link>
-        <Link to="/order">Order</Link>
-        <Link to="/catering">Catering</Link>
-        <Link to="/about">About</Link>
+        <Link to="/" onClick={() => setIsOpen(!isOpen)}>
+          Home
+        </Link>
+        <Link to="/menu" onClick={() => setIsOpen(!isOpen)}>
+          Menu
+        </Link>
+        <Link to="/order" onClick={() => setIsOpen(!isOpen)}>
+          Order
+        </Link>
+        <Link to="/catering" onClick={() => setIsOpen(!isOpen)}>
+          Catering
+        </Link>
+        <Link to="/about" onClick={() => setIsOpen(!isOpen)}>
+          About
+        </Link>
       </div>
     </nav>
   );

@@ -69,6 +69,7 @@
   text-decoration: none;
   border-bottom: 1px solid #ddd; /* Separator for items */
   transition: background-color 0.3s ease;
+  color: #f17105; /* Text color of the menu items */
 }
 
 /* Responsive adjustments */

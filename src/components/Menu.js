@@ -79,7 +79,7 @@ const menuItems = {
 
 const renderMenuItem = (item) => (
   <div className="menu-item">
-    <h3>{item.name}</h3>
+    <h4 className="">{item.name}</h4>
     <p>{item.prices.join(", ")}</p>
     <h6>{item.description}</h6>
   </div>
