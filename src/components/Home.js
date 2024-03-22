@@ -5,7 +5,7 @@ import { FaLocationArrow } from "react-icons/fa";
 import SubFooter from "./SubFooter";
 import About from "./About";
 import DeliciousShawarma from "../assets/shawarmabg.webp";
-import Carousel from "./Carousel";
+// import Carousel from "./Carousel";
 const Home = () => {
   return (
     <div className="beforeHome">
