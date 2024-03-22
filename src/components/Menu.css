@@ -22,3 +22,10 @@
 .menu-item p {
   margin: 0;
 }
+
+.colored {
+  color: #f17105;
+}
+.uncolored {
+  color: white;
+}

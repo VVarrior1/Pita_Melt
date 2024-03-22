@@ -105,7 +105,7 @@ const menuItems = {
 const renderMenuItem = (item) => (
   <div className="menu-item">
     <h4 className="fw-light">{item.name}</h4>
-    <p>{item.prices.join(", ")}</p>
+    <p className="colored">{item.prices.join(", ")}</p>
     <h6 className="fw-light">{item.description}</h6>
   </div>
 );
