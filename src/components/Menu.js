@@ -51,7 +51,7 @@ const menuItems = {
     { name: "Greek Salad", prices: [9.99, 12] },
   ],
   Desserts: [
-    { name: "Baklava", prices: [1 + "pc: " + 1.25, 6 + "pc" + 6] },
+    { name: "Baklava", prices: [1 + "pc: " + 1.25, 6 + "pc: " + 5.99] },
     { name: "Nanimo bar", prices: [1 + "pc: " + 1.99] },
 
     { name: "Brownie", prices: [1 + "pc: " + 2.99] },
@@ -78,14 +78,27 @@ const menuItems = {
     { name: "Fries", prices: [4.99, 5.99, 6.99] },
     { name: "Waffle Fries", prices: [5.49, 6.49, 7.49] },
     { name: "Spiral potato", prices: [3.99] },
-    { name: "Poutine", prices: [6.5,8.5] },
-    { name: "Chicken Wings", prices: [5.49, 6.49, 7.49] },
-
+    { name: "Poutine", prices: [6.5, 8.5] },
     { name: "Garlic Potato", prices: [5.49, 6.49, 7.49] },
+
+    {
+      name: "Chicken Wings",
+      prices: [12 + "pc: " + 11.99, 24 + "pc: " + 22.99],
+      description: "Hot, Buffalo, BBQ, Terriyaki, Honey Garlic, Salt & Pepper.",
+    },
+
     { name: "Onion Rings", prices: [5.49, 6.49, 7.49] },
 
-    { name: "Rice", prices: [3.99] },
+    { name: "Large Samosa", prices: [1 + "pc: " + 2.99, 2 + "pc: " + 4.99] },
+    { name: "Falafel", prices: [1 + "pc: " + 0.99, 6 + "pc: " + 4.99] },
+    { name: "Stuffed Falafel", prices: [1 + "pc: " + 1.49, 6 + "pc: " + 6.99] },
+    { name: "Vine Grape leaves", prices: [1 + "pc: " + 1, 12 + "pc: " + 10.0] },
   ],
+  pies: [
+    { name: "Meat Pie", prices: [4.99] },
+    { name: "Mini Meat Pies", prices: [1 + "pc: " + 1.99, 6 + "pc: " + 9.99] },
+  ],
+
   // Add other categories here
 };
 
@@ -117,6 +130,10 @@ const Menu = () => (
     {menuItems.Beverages.map(renderMenuItem)}
     <h2>Dips</h2>
     {menuItems.Dips.map(renderMenuItem)}
+    <h2>Sides</h2>
+    {menuItems.Sides.map(renderMenuItem)}
+    <h2>Pies</h2>
+    {menuItems.pies.map(renderMenuItem)}
 
     {/* Render other categories in a similar way */}
   </div>
