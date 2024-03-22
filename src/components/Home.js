@@ -9,7 +9,7 @@ import Carousel from "./Carousel";
 const Home = () => {
   return (
     <div className="beforeHome">
-      <Carousel />
+      {/* <Carousel /> */}
       <div className="bigHome">
         <div className="home">
           {/* <h6 className="dev ">Website currently under development!</h6> */}

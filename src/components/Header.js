@@ -16,8 +16,8 @@ const Header = () => {
         <Link to="/order">Order</Link>
         <h1 className="breaker">|</h1>
         <Link to="/catering">Catering</Link>
-        <h1 className="breaker">|</h1>
-        <Link to="/about">About</Link>
+        {/* <h1 className="breaker">|</h1> */}
+        {/* <Link to="/about">About</Link> */}
       </nav>
       <HamburgerMenu />
     </header>

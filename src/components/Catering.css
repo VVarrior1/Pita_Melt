@@ -1,0 +1,20 @@
+.ph-number {
+  color: #f17105 !important;
+  text-decoration: none;
+}
+.catering {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: black;
+}
+
+.catering h1 {
+  color: white;
+  margin: 0px;
+  padding-bottom: px;
+  max-width: 600px;
+  margin: 0px;
+}

@@ -5,6 +5,8 @@ import Menu from "./components/Menu";
 import SubFooter from "./components/SubFooter";
 import Footer from "./components/Footer";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Catering from "./components/Catering";
+import Order from "./components/Order";
 
 function App() {
   return (
@@ -13,8 +15,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         {/* <Route path="/menu" element={<Menu />} /> */}
+        <Route path="/menu" element={<Menu />} />
         <Route path="/about" element={<SubFooter />} />
-        <Route path="/menu" element={<Menu pdf="src/assets/menu.pdf" />} />
+        <Route path="/order" element={<Order />} />
+        <Route path="/catering" element={<Catering />} />
       </Routes>
       <Footer />
     </BrowserRouter>
@@ -22,3 +26,5 @@ function App() {
 }
 
 export default App;
+
+// toDo: carousel and add menu call to action

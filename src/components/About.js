@@ -12,6 +12,7 @@ const About = () => {
           addicted!
         </div>
       </div>
+      
     </div>
   );
 };

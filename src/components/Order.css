@@ -1,0 +1,14 @@
+.order h1 {
+  color: white;
+  margin: 0px;
+  padding-bottom: px;
+  max-width: 600px;
+}
+.order {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  background-color: black;
+}

@@ -6,7 +6,7 @@
   display: block;
   left: 0;
   margin-left: 3rem;
-  margin-right: 13rem;
+  margin-right: 19rem;
 }
 
 .header {
@@ -43,7 +43,7 @@
   .main-menu {
     display: none;
   }
-  .img1 { 
+  .img1 {
     margin-left: 1rem;
     margin-right: 1rem;
   }
