@@ -74,6 +74,18 @@ const menuItems = {
 
     { name: "Taziki Sauce", prices: [5.5, 8.5] },
   ],
+  Sides: [
+    { name: "Fries", prices: [4.99, 5.99, 6.99] },
+    { name: "Waffle Fries", prices: [5.49, 6.49, 7.49] },
+    { name: "Spiral potato", prices: [3.99] },
+    { name: "Poutine", prices: [6.5,8.5] },
+    { name: "Chicken Wings", prices: [5.49, 6.49, 7.49] },
+
+    { name: "Garlic Potato", prices: [5.49, 6.49, 7.49] },
+    { name: "Onion Rings", prices: [5.49, 6.49, 7.49] },
+
+    { name: "Rice", prices: [3.99] },
+  ],
   // Add other categories here
 };
 
@@ -81,7 +93,7 @@ const renderMenuItem = (item) => (
   <div className="menu-item">
     <h4 className="fw-light">{item.name}</h4>
     <p>{item.prices.join(", ")}</p>
-    <h6>{item.description}</h6>
+    <h6 className="fw-light">{item.description}</h6>
   </div>
 );
 
@@ -97,6 +109,15 @@ const Menu = () => (
     {menuItems.platters.map(renderMenuItem)}
     <h2>Special Platters</h2>
     {menuItems.specialPlatters.map(renderMenuItem)}
+    <h2>Salads</h2>
+    {menuItems.salads.map(renderMenuItem)}
+    <h2>Desserts</h2>
+    {menuItems.Desserts.map(renderMenuItem)}
+    <h2>Beverages</h2>
+    {menuItems.Beverages.map(renderMenuItem)}
+    <h2>Dips</h2>
+    {menuItems.Dips.map(renderMenuItem)}
+
     {/* Render other categories in a similar way */}
   </div>
 );
