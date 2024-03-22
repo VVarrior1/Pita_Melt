@@ -45,7 +45,7 @@ const Home = () => {
           </h5>
         </div>
         <div className="home-image">
-          <img src={DeliciousShawarma} className="home-img"></img>
+          <img src={DeliciousShawarma} className="home-img" alt = "Delicious Shawarma"></img>
         </div>
       </div>
       <About />
