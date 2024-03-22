@@ -1,22 +1,22 @@
-/* Menu.css */
-.Menu {
-  background-color: #501900;
+.menuforsale {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around; /* Changed to space-around to handle spacing between items */
-  margin: 0px;
-  padding-left: 0; /* Removed padding-left to allow flex items to distribute evenly */
+  padding: 20px;
 }
-/* Menu.css */
-.Menu {
-  background-color: #501900;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-around; /* Changed to space-around to handle spacing between items */
-  margin: 0px;
-  padding-left: 0; /* Removed padding-left to allow flex items to distribute evenly */
+
+.menu-item {
+  margin: 10px 0;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+  width: 80%;
+}
+
+.menu-item h3 {
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.menu-item p {
+  margin: 0;
 }

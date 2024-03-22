@@ -7,20 +7,29 @@
   background-color: black; /* Black background color */
   height: 90%; /* Full width */
   position: relative;
-  z-index: 1;
 }
 
+.bigHome {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  padding-top: 60px;
+  background-color: rgb(0, 0, 0); /* Adjust to match your site's color scheme */
+  color: white;
+}
 .home {
   /* user-select: none; */
   position: relative; /* Needed for absolute positioning of the child */
   height: 10%; /* Adjust to fit content */
+  width: 50%;
   display: flex;
   flex-direction: column;
   justify-content: top;
   align-items: left;
   text-align: left;
   color: white;
-  z-index: 1; /* Ensure content is above background */
+  margin-left: px;
 }
 
 .bg {
@@ -34,24 +43,33 @@
   background-position: center;
   background-repeat: no-repeat;
   opacity: 0.6; /* Apply opacity here */
-  z-index: -1; /* Place it behind the content */
 }
 
 .homeTitle {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 3rem; /* Increased font size */
   font-weight: bold;
 
   margin: 1%;
   padding-top: 10px;
 }
+.home-image {
+  top: 0;
+  left: 0;
+  right: 300px;
+  text-align: right;
+  flex: 1;
+}
+.home-img {
+  display: block;
+  width: 80%;
+  height: auto;
+}
 .homeText {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.5rem; /* Increased font size */
+  font-size: 2rem; /* Increased font size */
   font-weight: bold;
   margin: 1%;
   padding-top: 1%;
-  background-color: rgba(0, 0, 0, 0.5); /* Black with 50% opacity */
+  /* background-color: rgba(0, 0, 0, 0.5); Black with 50% opacity */
 }
 .call {
   display: flex;
@@ -63,7 +81,6 @@
 }
 
 .call_text {
-  font-family: Arial, Helvetica, sans-serif;
   margin: 1%;
   color: whitesmoke;
   user-select: text;
@@ -80,15 +97,12 @@
 }
 
 .call_text {
-  font-family: Arial, Helvetica, sans-serif;
   margin: 1%;
   color: whitesmoke;
 }
 /* Rest of your styles */
 
 .number {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 3rem; /* Increased font size */
   margin: 1%;
   padding-top: 1%;
   color: #f17105;
@@ -98,7 +112,43 @@
 .subtitle {
   color: white;
 }
+@media (max-width: 1200px) {
+  .homeTitle {
+    font-size: 2.5em; /* Smaller font size for smaller screens */
+    padding-top: 5%; /* Adjust padding for smaller screens */
+  }
 
+  .home {
+    align-items: left;
+    justify-content: left;
+  }
+  .homeText {
+    font-size: 1.5em; /* Smaller font size for smaller screens */
+    padding-top: 0.5%; /* Adjust padding for smaller screens */
+    margin: 0.5%; /* Adjust margin for smaller screens */
+  }
+  .subtitle {
+    color: white;
+  }
+  .number {
+    font-size: 1.2em; /* Smaller font size for smaller screens */
+    margin-bottom: 5px; /* Adjust padding for smaller screens */
+  }
+
+  .homeText {
+    padding: 15px;
+    margin-top: 10px;
+  }
+
+  .bigHome {
+    flex-direction: row;
+    padding: 0;
+  }
+  .home {
+    width: 100%;
+    padding: 0;
+  }
+}
 @media (max-width: 768px) {
   .homeTitle {
     font-size: 1.7em; /* Smaller font size for mobile */
@@ -121,6 +171,17 @@
   .homeText {
     padding: 15px;
     margin-top: 10px;
+  }
+  .home-image {
+    display: none;
+  }
+  .bigHome {
+    flex-direction: column;
+    padding: 0;
+  }
+  .home {
+    width: 100%;
+    padding: 0;
   }
 }
 

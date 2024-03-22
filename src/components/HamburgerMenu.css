@@ -1,10 +1,15 @@
 /* Styles for the hamburger icon */
+.hamburgermenu-container {
+  position: absolute;
+  right: 0;
+}
 .hamburger {
   cursor: pointer;
   display: inline-block;
   position: relative;
   width: 35px; /* Width of the hamburger icon */
   height: 30px; /* Height of the hamburger icon */
+  right: 0;
   z-index: 10001; /* Ensure it's above other content */
   margin-right: 20px;
 }
@@ -67,3 +72,9 @@
 }
 
 /* Responsive adjustments */
+
+@media (min-width: 1200px) {
+  .hamburger {
+    display: none;
+  }
+}

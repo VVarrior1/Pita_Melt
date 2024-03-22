@@ -11,7 +11,10 @@ const SubFooter = () => {
         </p>
         <p className="about-us-phone">
           <span style={{ fontWeight: "bold" }}>Phone: </span>
-          <span style={{ color: "white" }}> 403-123-4567 </span>
+          <span style={{ color: "white" }}>
+            {" "}
+            <a className = "phone-number" href="tel: +1(403) 293-5809">(403) 293-5809 </a>
+          </span>
         </p>
       </div>
     </div>

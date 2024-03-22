@@ -3,10 +3,14 @@
   background-color: #071013; /* Light grey background */
   color: #fff; /* Dark text color */
   text-align: center; /* Center-align the text */
-  padding: 1px 0; /* Padding above and below the text */
   position: relative;
-  left: 0;
-  bottom: 0;
+  padding-top: 6px;
+  padding-bottom: 6px;
   width: 100%;
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* subtle shadow for depth */
+}
+p {
+  font-size: smaller;
+  margin: 0;
+  padding: 0;
 }

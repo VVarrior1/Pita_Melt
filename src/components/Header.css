@@ -1,10 +1,12 @@
-img {
+.img1 {
   width: 85px;
+  max-width: 85px;
   height: 85px;
   align-self: left;
   display: block;
-  margin-left: 2%;
-  margin-right: auto;
+  left: 0;
+  margin-left: 3rem;
+  margin-right: 13rem;
 }
 
 .header {
@@ -14,38 +16,31 @@ img {
   display: flex;
   flex-direction: row; /* Removed quotation marks and added hyphen */
   align-items: center; /* Removed quotation marks and added hyphen */
-  justify-content: center; /* Removed quotation marks and added hyphen */
-  font-size: calc(10px + 2vmin); /* Removed quotation marks */
+  justify-content: left; /* Removed quotation marks and added hyphen */
   color: white;
   position: relative;
 }
 
-a {
-  font-family: Arial, Helvetica, sans-serif;
-  color: #f17105;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 5px;
-  margin: 10px;
+.main-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 7%;
 }
-
-a:hover {
-  text-decoration: underline;
-  color: #7f7b82;
-  transition: all 0.3s ease; /* Added transition property */
+.breaker {
+  font-weight: lighter;
 }
-
-/* Existing styles... */
-
-/* Responsive Design for screens smaller than 600px */
-/* Header.css */
-/* ... existing styles ... */
-
-.menu-toggle {
-  display: none;
-  /* Style your hamburger icon here */
+.main-menu a {
+  color: #f17105; /* Or any color that contrasts well with #071013 */
+  font-size: xx-large;
+  text-decoration: none; /* Optional: Removes underline from links */
+  padding: 8px; /* Adds some space around the links */
 }
-
+.main-menu a:hover {
+  color: #e7ad7e; /* Or any color that contrasts well with #071013 */
+}
 /* Media query for smaller screens */
-@media (max-width: 600px) {
+@media (max-width: 1200px) {
+  .main-menu {
+    display: none;
+  }
 }

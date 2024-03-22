@@ -5,7 +5,7 @@ function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav>
+    <nav className = "hamburgermenu-container">
       <div
         className={`hamburger ${isOpen ? "open" : ""}`}
         onClick={() => setIsOpen(!isOpen)}
