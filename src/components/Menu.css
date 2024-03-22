@@ -1,5 +1,7 @@
 .menuforsale {
   display: flex;
+  background-color: black;
+  color: white;
   flex-direction: column;
   align-items: center;
   padding: 20px;
@@ -12,7 +14,7 @@
   width: 80%;
 }
 
-.menu-item h3 {
+.menu-item h4 {
   margin: 0;
   padding-bottom: 5px;
 }
