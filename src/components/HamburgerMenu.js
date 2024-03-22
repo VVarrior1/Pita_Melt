@@ -29,9 +29,9 @@ function HamburgerMenu() {
         <Link to="/catering" onClick={() => setIsOpen(!isOpen)}>
           Catering
         </Link>
-        <Link to="/about" onClick={() => setIsOpen(!isOpen)}>
+        {/* <Link to="/about" onClick={() => setIsOpen(!isOpen)}>
           About
-        </Link>
+        </Link> */}
       </div>
     </nav>
   );
