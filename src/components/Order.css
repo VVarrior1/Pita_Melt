@@ -37,4 +37,5 @@
 .number {
   color: #f17105 !important;
   text-decoration: none;
+  white-space: nowrap;
 }
