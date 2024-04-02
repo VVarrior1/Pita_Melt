@@ -3,33 +3,62 @@ import "./Menu.css"; // Importing the CSS file for styling
 
 const menuItems = {
   pitaWraps: [
-    { name: "Beef Donair", prices: [8.5, 10.5, 12.5, 16.99] },
-    { name: "Chicken Shawarma", prices: [8.5, 10.5, 12.5, 16.99] },
-    { name: "Tenderloin Steak", prices: [9.99, 12.99, 16.99] },
-    { name: "Shish Tawook", prices: [8.99, 11.99, 14.99] },
-    { name: "Kofta Kabab", prices: [8.99, 11.99, 14.99] },
-    { name: "Regular Falafel", prices: [6.99, 8.99, 10.99] },
-    { name: "Stuffed Falafel", prices: [7.99, 9.99, 11.99] },
-    { name: "Grilled Chicken", prices: [12.5] },
+    {
+      name: "Beef Donair",
+      prices: ["S: " + 8.5, "M: " + 10.5, "L: " + 12.5, "Jumbo: " + 16.99],
+    },
+    {
+      name: "Chicken Shawarma",
+      prices: ["S: " + 8.5, "M: " + 10.5, "L: " + 12.5, "Jumbo: " + 16.99],
+    },
+    {
+      name: "Tenderloin Steak",
+      prices: ["S: " + 9.99, "M: " + 12.99, "L: " + 16.99],
+    },
+    {
+      name: "Shish Tawook",
+      prices: ["S: " + 8.99, "M: " + 11.99, "L: " + 14.99],
+    },
+    {
+      name: "Kofta Kabab",
+      prices: ["S: " + 8.99, "M: " + 11.99, "L: " + 14.99],
+    },
+    {
+      name: "Regular Falafel",
+      prices: ["S: " + 6.99, "M: " + 8.99, "L: " + 10.99],
+    },
+    {
+      name: "Stuffed Falafel",
+      prices: ["S: " + 7.99, "M: " + 9.99, "L: " + 11.99],
+    },
+    { name: "Grilled Chicken", prices: ["M: " + 12.5] },
 
     // Add the rest of the Pita Wraps here
   ],
   platters: [
-    { name: "Beef Donair Platter", prices: [13.5, 15.5] },
-    { name: "Chicken Shawarma Platter", prices: [13.5, 15.5] },
-    { name: "Tenderloin Steak Platter", prices: [16.99, 19.99] },
-    { name: "Boneless Lamb Platter", prices: [16.99, 19.99] },
-
-    { name: "Shish Tawook Platter", prices: [14.5, 16.5] },
-    { name: "Kofta Kabab Platter", prices: [14.5, 16.5] },
-    { name: "Grilled Chicken Platter", prices: [14.5, 16.5] },
+    { name: "Beef Donair Platter", prices: [14.99] },
+    { name: "Chicken Shawarma Platter", prices: [14.99] },
+    { name: "Tenderloin Steak Platter", prices: [16.99] },
+    { name: "Boneless Lamb Platter", prices: [16.99] },
+    { name: "Shish Tawook Platter", prices: [15.99] },
+    { name: "Kofta Kabab Platter", prices: [15.99] },
+    { name: "Grilled Chicken Platter", prices: [15.99] },
     // Add the rest of the Platters here
   ],
 
   specialPlatters: [
-    { name: "Chicken Shawarma Fries/Poutine", prices: [10.99, 14.99] },
-    { name: "Beef Donair Fries/Poutine", prices: [10.99, 14.99] },
-    { name: "Chicken Shawarma Poutine", prices: [10.99, 14.99] },
+    {
+      name: "Chicken Shawarma Fries/Poutine",
+      prices: ["M: " + 10.99, "L: " + 14.99],
+    },
+    {
+      name: "Beef Donair Fries/Poutine",
+      prices: ["M: " + 10.99, "L: " + 14.99],
+    },
+    {
+      name: "Chicken Shawarma Poutine",
+      prices: ["M: " + 10.99, "L: " + 14.99],
+    },
     {
       name: "Vegetarian Platter",
       prices: [13.99],
@@ -41,14 +70,14 @@ const menuItems = {
       prices: [14.99],
       description: "Comes with Salad and Fries",
     },
-    { name: "Chicken Shawarma Salad", prices: [10.5, 12.5] },
-    { name: "Beef Donair Salad", prices: [10.5, 12.5] },
+    { name: "Chicken Shawarma Salad", prices: ["M: " + 10.5, "L: " + 12.5] },
+    { name: "Beef Donair Salad", prices: ["M: " + 10.5, "L: " + 12.5] },
   ],
   salads: [
-    { name: "Fatoush", prices: [6.5, 8.5] },
-    { name: "Tabouli", prices: [6.5, 8.5] },
-    { name: "Cesar Salad", prices: [7.5, 8.5] },
-    { name: "Greek Salad", prices: [9.99, 12] },
+    { name: "Fatoush", prices: ["M: " + 6.5, "L: " + 8.5] },
+    { name: "Tabouli", prices: ["M: " + 6.5, "L: " + 8.5] },
+    { name: "Cesar Salad", prices: ["M: " + 7.5, "L: " + 8.5] },
+    { name: "Greek Salad", prices: ["M: " + 9.99, "L: " + 12] },
   ],
   Desserts: [
     { name: "Baklava", prices: [1 + "pc: " + 1.25, 6 + "pc: " + 5.99] },
@@ -65,21 +94,31 @@ const menuItems = {
     { name: "Water", prices: [1.5] },
   ],
   Dips: [
-    { name: "Hummus", prices: [5.5, 8.5], description: "comes with one pita" },
-    { name: "Tahini", prices: [5.5, 8.5] },
+    {
+      name: "Hummus",
+      prices: ["M: " + 5.5, "L: " + 8.5],
+      description: "comes with one pita",
+    },
+    { name: "Tahini", prices: ["M: " + 5.5, "L: " + 8.5] },
     { name: "Garlic Paste", prices: [4.99] },
 
-    { name: "Sweet Sauce", prices: [3.99, 6.99] },
-    { name: "Garlic Sauce", prices: [5.5, 8.5] },
+    { name: "Sweet Sauce", prices: ["M: " + 3.99, "L: " + 6.99] },
+    { name: "Garlic Sauce", prices: ["M: " + 5.5, "L: " + 8.5] },
 
-    { name: "Taziki Sauce", prices: [5.5, 8.5] },
+    { name: "Taziki Sauce", prices: ["M: " + 5.5, "L: " + 8.5] },
   ],
   Sides: [
-    { name: "Fries", prices: [4.99, 5.99, 6.99] },
-    { name: "Waffle Fries", prices: [5.49, 6.49, 7.49] },
+    { name: "Fries", prices: ["S: " + 4.99, "M: " + 5.99, "L: " + 6.99] },
+    {
+      name: "Waffle Fries",
+      prices: ["S: " + 5.49, "M: " + 6.49, "L: " + 7.49],
+    },
     { name: "Spiral potato", prices: [3.99] },
-    { name: "Poutine", prices: [6.5, 8.5] },
-    { name: "Garlic Potato", prices: [5.49, 6.49, 7.49] },
+    { name: "Poutine", prices: ["M: " + 6.5, "L: " + 8.5] },
+    {
+      name: "Garlic Potato",
+      prices: ["S: " + 5.49, "M: " + 6.49, "L: " + 7.49],
+    },
 
     {
       name: "Chicken Wings",
@@ -87,7 +126,7 @@ const menuItems = {
       description: "Hot, Buffalo, BBQ, Terriyaki, Honey Garlic, Salt & Pepper.",
     },
 
-    { name: "Onion Rings", prices: [5.49, 6.49, 7.49] },
+    { name: "Onion Rings", prices: ["S: " + 5.49, "M: " + 6.49, "L: " + 7.49] },
 
     { name: "Large Samosa", prices: [1 + "pc: " + 2.99, 2 + "pc: " + 4.99] },
     { name: "Falafel", prices: [1 + "pc: " + 0.99, 6 + "pc: " + 4.99] },

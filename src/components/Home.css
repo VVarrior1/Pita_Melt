@@ -25,7 +25,7 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: top;
+  justify-content: space-between;
   align-items: left;
   text-align: left;
   color: white;
@@ -219,4 +219,23 @@
 
 .directions-button {
   /* Specific styles for directions button */
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Aligns items to the end of the container */
+  align-items: center;
+}
+
+.button {
+  /* Assign specific class or id to each button if they have different styles */
+  margin-left: 10px; /* Adjust space between the buttons */
+  /* Add additional styling such as padding, font size, etc. */
+}
+
+/* If your buttons have different widths and you want to make them equal: */
+.button {
+  flex: 1; /* This will make both buttons take equal space */
+  text-align: center; /* This centers the text inside the buttons */
+  /* Add padding, border, and other properties as needed */
 }
