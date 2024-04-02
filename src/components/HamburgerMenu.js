@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import "./HamburgerMenu.css";
 import { Link } from "react-router-dom";
+import { FaInstagram } from "react-icons/fa";
 
 function HamburgerMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -57,6 +58,15 @@ function HamburgerMenu() {
         <Link to="/catering" onClick={toggleMenu}>
           Catering
         </Link>
+        <a
+          className="instagram-icon"
+          href="https://www.instagram.com/pitameltyyc/"
+          target="_blank"
+          rel="noopenr noreferrer"
+        >
+          {" "}
+          <FaInstagram />
+        </a>
         {/* Additional menu items here */}
       </div>
     </nav>
